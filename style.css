@@ -1,0 +1,152 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+body {
+   display: grid;
+   height: 100vh;
+   place-items: center;
+   background: linear-gradient(to right, rgba(225, 101, 19, 0.459) 0%, #827d7ab9 100%);
+}
+
+
+.container {
+   background: #ffffff;
+   max-width: 350px;
+   width: 100%;
+   height: 500px;
+   padding: 25px 30px;
+   border-radius: 5px;
+   position: relative;
+}
+
+.container .logo img {
+   position: absolute;
+   width: 140px;
+   height: 90px;
+   left: 50%;
+   top: 10px;
+   margin-left: -70px;
+   border-radius: 5%;
+}
+
+
+.container form .title {
+   font-size: 20px;
+   font-weight: 600;
+   margin: 60px 0 1px 0;
+   position: relative;
+   text-align: center;
+   top: 50px;
+}
+
+
+
+
+
+
+.container form .input-box {
+   width: 100%;
+   height: 45px;
+   margin-top: 20px;
+   top: 50px;
+   position: relative;
+}
+
+.container form .input-box input {
+   height: 100%;
+   width: 100%;
+   outline: none;
+   font-size: 16px;
+   border: none;
+}
+
+.container form .underline:before {
+   position: absolute;
+   content: '';
+   height: 2px;
+   width: 100%;
+   background: #ccc;
+   left: 0;
+   bottom: 0;
+}
+
+.container form .underline:after {
+   position: absolute;
+   content: '';
+   height: 2px;
+   width: 100%;
+   left: 0;
+   bottom: 0;
+   background: rgb(123, 122, 122);
+   transform: scaleX(0);
+   transform-origin: left;
+   transition: all 0.3s ease;
+}
+
+.container form .input-box input:focus~.underline:after,
+.container form .input-box input:valid~.underline:after {
+   transform: scaleX(1);
+   transform-origin: left;
+}
+
+.container form .button {
+   margin: 40px 0 20px 0;
+}
+
+.container form .input-box input[type="submit"] {
+   font-size: 17px;
+   color: #fff;
+   border-radius: 5px;
+   cursor: pointer;
+   background: #eb6622;
+   font-weight: bold;
+   transition: all 0.3s ease;
+}
+
+.container form .input-box input[type="submit"]:hover {
+   letter-spacing: 1px;
+   background: #777771;
+   color: #ffffff;
+   font-weight: bold;
+   border-radius: 10px;
+}
+
+
+.container .text{
+   font-size: 14px;
+   text-align: center;
+}
+
+.container .autodesk a{
+   display: block;
+   width: 100%;
+   height: 45px;
+   font-size: 15px;
+   text-decoration: none;
+   padding-left: 20px;
+   color: #fff;
+   line-height: 45px;
+   border-radius: 5px;
+}
+
+.container .autodesk a{
+   background-color: #000000;
+   margin: 70px 0 15px 0;
+   text-align: center;
+}
+
+.container .autodesk a:hover{
+   background-color: #777771;
+   
+}
+
+
+.container .autodesk i{
+   font-size: 22px;
+   padding-right: 22px;
+   
+}
